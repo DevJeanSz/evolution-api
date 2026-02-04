@@ -53,7 +53,7 @@ CREATE TABLE "Chat" (
 );
 
 -- CreateTable
-CREATE TABLE "Contact" (
+/* CREATE TABLE "Contact" (
     "id" TEXT NOT NULL,
     "remoteJid" VARCHAR(100) NOT NULL,
     "pushName" VARCHAR(100),
@@ -63,10 +63,10 @@ CREATE TABLE "Contact" (
     "instanceId" TEXT NOT NULL,
 
     CONSTRAINT "Contact_pkey" PRIMARY KEY ("id")
-);
+); */
 
 -- CreateTable
-CREATE TABLE "Message" (
+/* CREATE TABLE "Message" (
     "id" TEXT NOT NULL,
     "key" JSONB NOT NULL,
     "pushName" VARCHAR(100),
@@ -85,10 +85,10 @@ CREATE TABLE "Message" (
     "typebotSessionId" TEXT,
 
     CONSTRAINT "Message_pkey" PRIMARY KEY ("id")
-);
+); */
 
 -- CreateTable
-CREATE TABLE "MessageUpdate" (
+/* CREATE TABLE "MessageUpdate" (
     "id" TEXT NOT NULL,
     "keyId" VARCHAR(100) NOT NULL,
     "remoteJid" VARCHAR(100) NOT NULL,
@@ -100,7 +100,7 @@ CREATE TABLE "MessageUpdate" (
     "instanceId" TEXT NOT NULL,
 
     CONSTRAINT "MessageUpdate_pkey" PRIMARY KEY ("id")
-);
+); */
 
 -- CreateTable
 CREATE TABLE "Webhook" (
@@ -118,7 +118,7 @@ CREATE TABLE "Webhook" (
 );
 
 -- CreateTable
-CREATE TABLE "Chatwoot" (
+/* CREATE TABLE "Chatwoot" (
     "id" TEXT NOT NULL,
     "enabled" BOOLEAN DEFAULT true,
     "accountId" VARCHAR(100),
@@ -139,10 +139,10 @@ CREATE TABLE "Chatwoot" (
     "instanceId" TEXT NOT NULL,
 
     CONSTRAINT "Chatwoot_pkey" PRIMARY KEY ("id")
-);
+); */
 
 -- CreateTable
-CREATE TABLE "Label" (
+/* CREATE TABLE "Label" (
     "id" TEXT NOT NULL,
     "labelId" VARCHAR(100),
     "name" VARCHAR(100) NOT NULL,
@@ -153,7 +153,7 @@ CREATE TABLE "Label" (
     "instanceId" TEXT NOT NULL,
 
     CONSTRAINT "Label_pkey" PRIMARY KEY ("id")
-);
+); */
 
 -- CreateTable
 CREATE TABLE "Proxy" (
@@ -189,7 +189,7 @@ CREATE TABLE "Setting" (
 );
 
 -- CreateTable
-CREATE TABLE "Rabbitmq" (
+/* CREATE TABLE "Rabbitmq" (
     "id" TEXT NOT NULL,
     "enabled" BOOLEAN NOT NULL DEFAULT false,
     "events" JSONB NOT NULL,
@@ -198,10 +198,10 @@ CREATE TABLE "Rabbitmq" (
     "instanceId" TEXT NOT NULL,
 
     CONSTRAINT "Rabbitmq_pkey" PRIMARY KEY ("id")
-);
+); */
 
 -- CreateTable
-CREATE TABLE "Sqs" (
+/* CREATE TABLE "Sqs" (
     "id" TEXT NOT NULL,
     "enabled" BOOLEAN NOT NULL DEFAULT false,
     "events" JSONB NOT NULL,
@@ -210,7 +210,7 @@ CREATE TABLE "Sqs" (
     "instanceId" TEXT NOT NULL,
 
     CONSTRAINT "Sqs_pkey" PRIMARY KEY ("id")
-);
+); */
 
 -- CreateTable
 CREATE TABLE "Websocket" (
@@ -225,7 +225,7 @@ CREATE TABLE "Websocket" (
 );
 
 -- CreateTable
-CREATE TABLE "Typebot" (
+/* CREATE TABLE "Typebot" (
     "id" TEXT NOT NULL,
     "enabled" BOOLEAN NOT NULL DEFAULT true,
     "url" VARCHAR(500) NOT NULL,
@@ -245,10 +245,10 @@ CREATE TABLE "Typebot" (
     "instanceId" TEXT NOT NULL,
 
     CONSTRAINT "Typebot_pkey" PRIMARY KEY ("id")
-);
+); */
 
 -- CreateTable
-CREATE TABLE "TypebotSession" (
+/* CREATE TABLE "TypebotSession" (
     "id" TEXT NOT NULL,
     "remoteJid" VARCHAR(100) NOT NULL,
     "pushName" VARCHAR(100),
@@ -262,10 +262,10 @@ CREATE TABLE "TypebotSession" (
     "instanceId" TEXT NOT NULL,
 
     CONSTRAINT "TypebotSession_pkey" PRIMARY KEY ("id")
-);
+); */
 
 -- CreateTable
-CREATE TABLE "TypebotSetting" (
+/* CREATE TABLE "TypebotSetting" (
     "id" TEXT NOT NULL,
     "expire" INTEGER DEFAULT 0,
     "keywordFinish" VARCHAR(100),
@@ -279,7 +279,7 @@ CREATE TABLE "TypebotSetting" (
     "instanceId" TEXT NOT NULL,
 
     CONSTRAINT "TypebotSetting_pkey" PRIMARY KEY ("id")
-);
+); */
 
 -- CreateIndex
 CREATE UNIQUE INDEX "Instance_name_key" ON "Instance"("name");
